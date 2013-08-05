@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+	ServerName misp-taxii
+	ServerAdmin chuck@norris
+
+
+
+	WSGIDaemonProcess taxiiservice processes=2 threads=15 display-name=%{GROUP}
+    WSGIProcessGroup taxiiservice
+    WSGIScriptAlias / /home/www/taxiiservice/taxii_service.wsgi
+
+
+</VirtualHost>
