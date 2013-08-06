@@ -8,8 +8,8 @@ Vagrant.configure("2") do |config|
     config.vm.network :private_network, ip: "10.0.0.2"
     config.vm.network :forwarded_port, guest: 80, host:4242
 
-    #config.vm.provision :shell, :inline => "sudo puppet module upgrade puppetlabs/vcsrepo"
-    #config.vm.provision :shell, :path => "bootstrap.sh"
+    #config.vm.provision :shell, :inline => "sudo puppet module install puppetlabs/vcsrepo"
+    config.vm.provision :shell, :path => "bootstrap.sh"
 
     config.vm.provision :puppet do |puppet|
         puppet.options        = "--verbose --debug"
