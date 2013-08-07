@@ -15,6 +15,9 @@ Installation
     cd MISP-TAXII-Vagrant
     vagrant up
 
+Based on your connection speed the initial run of the box can take some time.
+If you can disconnected you can restart the box and the process will resume.
+
 Usage
 =====
 
