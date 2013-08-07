@@ -16,7 +16,7 @@ Installation
     vagrant up
 
 Based on your connection speed the initial run of the box can take some time.
-On Windows hosts you might get different erorros about missing puppet or
+On Windows hosts you might get different errors about missing puppet or
 modules. Restarting the vagrant box should fix this.
 If you get disconnected you can restart the box and the process will resume.
 
